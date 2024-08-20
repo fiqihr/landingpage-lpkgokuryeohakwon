@@ -1,4 +1,4 @@
-const Home = () => {
+const Jumbotron = () => {
   return (
     // <section id="home" className="pt-20 pb-16 bg-gradient-to-r from-blue-800 via-blue-700 to-blue-600">
     <section
@@ -31,4 +31,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Jumbotron;
