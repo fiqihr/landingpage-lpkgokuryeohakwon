@@ -1,7 +1,7 @@
 const TentangKami = () => {
   return (
     <section id="tentangkami" className="pt-10">
-      <h1 className="text-4xl lg:text-5xl font-bold text-center mt-10 mb-5 lg:mt-20 lg:mb-10 text-primary">
+      <h1 className="text-4xl lg:text-5xl font-bold text-center mt-10 mb-5 lg:mt-20 lg:mb-20 text-primary">
         <span className="border-b-4 border-gray-200">Tentang Kami</span>
       </h1>
       <div className="container mx-auto px-4">

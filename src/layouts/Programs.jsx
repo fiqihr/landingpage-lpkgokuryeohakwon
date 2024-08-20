@@ -19,7 +19,7 @@ const Programs = () => {
   return (
     <section id="program" className="pt-10">
       <div className="container mx-auto px-4">
-        <h1 className="lg:text-5xl text-4xl font-bold text-center my-10 lg:mt-20 lg:mb-10 text-primary">
+        <h1 className="lg:text-5xl text-4xl font-bold text-center my-10 lg:mt-20 lg:mb-20 text-primary">
           <span className="border-b-4 border-gray-200">Program Kami</span>
         </h1>
         <div className="flex flex-col md:flex-row justify-evenly gap-10">

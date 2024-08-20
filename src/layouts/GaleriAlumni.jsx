@@ -20,7 +20,7 @@ function GaleriAlumni() {
   return (
     <section id="galerialumni" className="bg-gray-100 pt-10 pb-10">
       <div className="container mx-auto">
-        <h1 className="lg:text-5xl text-4xl font-bold text-center lg:mt-20 lg:mb-10 my-10 text-primary">
+        <h1 className="lg:text-5xl text-4xl font-bold text-center lg:mt-20 lg:mb-20 my-10 text-primary">
         <span className="border-b-4 border-gray-200">Galeri Alumni</span>
         </h1>
         <div className="max-w-full mx-auto">

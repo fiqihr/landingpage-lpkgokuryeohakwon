@@ -12,8 +12,8 @@ export default function InfoMasuk() {
 
   return (
     <section id="infomasuk" className="pt-10">
-    <div className="container mx-auto mb-10 px-4">
-      <h1 className="lg:text-5xl text-4xl font-bold text-center lg:mt-20 lg:mb-10 text-primary my-10">
+    <div className="container mx-auto mb-0 px-4">
+      <h1 className="lg:text-5xl text-4xl font-bold text-center lg:mt-20 lg:mb-20 text-primary my-10">
         <span className="border-b-4 border-gray-200">Info Masuk</span>
       </h1>
       <div className="flex flex-wrap justify-center gap-4 md:gap-8 bg-gray-100 border-b border-gray-300 rounded-lg">
