@@ -21,11 +21,8 @@ const InfoKelas = () => {
         </h1>
         {cardInfo.length > 0 &&
           cardInfo.map((card) => (
-            <div className="container px-3 lg:px-0">
-              <div
-                key={card.id}
-                className="mb-8 bg-gray-100 rounded-lg shadow-lg "
-              >
+            <div className="container px-3 lg:px-0" key={card.id}>
+              <div className="mb-8 bg-gray-100 rounded-lg shadow-lg ">
                 <div className="flex flex-wrap justify-between mx-8">
                   <div className="py-8">
                     <h3 className="text-3xl font-bold mb-4">{card.title}</h3>
@@ -44,7 +41,7 @@ const InfoKelas = () => {
           ))}
       </div>
     </section>
-);
+  );
 };
 
 export default InfoKelas;
