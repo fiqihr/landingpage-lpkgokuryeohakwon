@@ -6,7 +6,7 @@ const HubungiKami = () => {
           <img className="w-1/2 md:w-2/3" src="/images/question.svg" alt="question" />
         </div>
         <div className="md:w-2/3 self-center">
-          <h4 className="text-4xl lg:text-5xl  font-bold text-center text-primary">
+          <h4 className="mt-6 md:mt-0 lg:mt-0 text-4xl lg:text-5xl  font-bold text-center text-primary">
             Masih bingung? Mau tanya-tanya?
           </h4>
           <p className="text-center text-gray-800 text-md md:text-lg mt-2">
