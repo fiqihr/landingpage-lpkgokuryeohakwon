@@ -32,20 +32,20 @@ const Footer = () => {
           </div>
           <div className="pt-4 md:pt-0 lg:pt-0 pl-8 md:w-4/12 lg:w-4/12 text-gray-200 flex flex-col ">
             <h4 className="text-2xl font-bold mb-2 lg:mb-4">Ikuti Kami</h4>
-            <a href="#" className="text-sm mb-2">
+            <a href="https://www.facebook.com/lpk.gokuryeo" className="text-sm mb-2">
               <div className="flex items-center gap-1">
                 <img className="h-5" src="/icons/facebook.svg" alt="" />
                 <span>Lpk Gokuryeo Banjarnegara</span>
               </div>
             </a>
-            <a href="#" className="text-sm mb-2">
+            <a href="https://www.instagram.com/gokuryeo_hakwon/" className="text-sm mb-2">
               <div className="flex items-center gap-1">
                 <img className="h-5" src="/icons/instagram.svg" alt="" />
                 <span>gokuryeo_hakwon</span>
               </div>
             </a>
             
-            <a href="#" className="text-sm">
+            <a href="https://www.tiktok.com/@gokuryeo_hakwon" className="text-sm">
               <div className="flex items-center gap-1">
                 <img className="h-5" src="/icons/tiktok.svg" alt="" />
                 <span>@gokuryeo_hakwon</span>
