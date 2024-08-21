@@ -17,7 +17,7 @@ function NavList() {
         className="p-1 font-bold "
       >
         <a
-          href="#tentangkami"
+          href="/#tentangkami"
           className="flex items-center hover:text-primary transition-colors"
         >
           Tentang Kami
@@ -30,7 +30,7 @@ function NavList() {
         className="p-1 font-bold "
       >
         <a
-          href="#program"
+          href="/#program"
           className="flex items-center hover:text-primary transition-colors"
         >
           Program
@@ -43,7 +43,7 @@ function NavList() {
         className="p-1 font-bold "
       >
         <a
-          href="#infomasuk"
+          href="/#infomasuk"
           className="flex items-center hover:text-blue-500 transition-colors"
         >
           Info Masuk
@@ -57,7 +57,7 @@ function NavList() {
         className="p-1 font-bold"
       >
         <a
-          href="#infokelas"
+          href="/#infokelas"
           className="flex items-center hover:text-blue-500 transition-colors"
         >
           Info Kelas
@@ -70,7 +70,7 @@ function NavList() {
         className="p-1 font-bold "
       >
         <a
-          href="#galerialumni"
+          href="/#galerialumni"
           className="flex items-center hover:text-blue-500 transition-colors"
         >
           Galeri Alumni
@@ -83,7 +83,7 @@ function NavList() {
         className="p-1 font-bold"
       >
         <a
-          href="#"
+          href="/#infokelas"
           className="bg-blue-700 py-3 px-5 text-white rounded-lg flex items-center hover:bg-opacity-80 hover:shadow-md transition-colors "
         >
           <span className="mx-auto">Daftar Sekarang</span>
