@@ -132,7 +132,7 @@ export function NavbarSimple() {
           <img src="/images/logo.png" alt="logo" className="mr-2 h-12" />
           <Typography
             as="a"
-            href="#"
+            href="/#"
             variant="h6"
             className="mr-4 cursor-pointer py-1.5 self-center text-center text-lg"
           >
