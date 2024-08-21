@@ -12,10 +12,6 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "/program",
-    element: <div className="">ini program</div>,
-  },
-  {
     path: "/:title",
     element: <DetailPage data={programsData} />,
   },
