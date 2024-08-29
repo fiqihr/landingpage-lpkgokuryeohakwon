@@ -87,7 +87,7 @@ function GaleriAlumni() {
                     <div className="w-full md:w-1/2 p-4 lg:p-0 flex items-center ">
                       <div className=" lg:ml-4 lg:mr-20 mx-4 md:ml-2 md:mr-8 text-center md:text-left mb-8 md:mb-0 lg:mb-0">
                         <h4 className="text-xl font-bold mb-4 text-gray-800">{card.name}</h4>
-                        <p className="text-gray-700">{card.description}</p>
+                        <p className="text-gray-700 text-sm">{card.description}</p>
                       </div>
                     </div>
                   </div>
