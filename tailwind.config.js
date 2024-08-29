@@ -11,6 +11,7 @@ module.exports = withMT({
     extend: {
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
+        // sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },
       colors: {
         // primary: "#1F4478",
