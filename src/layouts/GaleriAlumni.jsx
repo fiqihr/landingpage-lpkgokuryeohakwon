@@ -18,7 +18,7 @@ function GaleriAlumni() {
     },
   ];
   return (
-    <section id="galerialumni" className="bg-gray-100 pt-10 pb-10">
+    <section id="galerialumni" className="bg-gradient-to-br from-gray-50 via-gray-100 to-gray-200 pt-10 pb-10">
       <div className="container mx-auto">
         <h1 className="lg:text-5xl text-4xl font-bold text-center lg:mt-20 lg:mb-20 my-10 text-primary">
         <span className="border-b-4 border-gray-200">Galeri Alumni</span>
@@ -86,8 +86,8 @@ function GaleriAlumni() {
                     />
                     <div className="w-full md:w-1/2 p-4 lg:p-0 flex items-center ">
                       <div className=" lg:ml-4 lg:mr-20 mx-4 md:ml-2 md:mr-8 text-center md:text-left mb-8 md:mb-0 lg:mb-0">
-                        <h4 className="text-xl font-bold mb-4">{card.name}</h4>
-                        <p className="">{card.description}</p>
+                        <h4 className="text-xl font-bold mb-4 text-gray-800">{card.name}</h4>
+                        <p className="text-gray-700">{card.description}</p>
                       </div>
                     </div>
                   </div>

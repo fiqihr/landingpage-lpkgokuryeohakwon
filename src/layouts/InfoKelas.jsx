@@ -25,9 +25,9 @@ const InfoKelas = () => {
               <div className="mb-8 bg-gray-100 rounded-lg shadow-lg ">
                 <div className="flex flex-wrap justify-between mx-8">
                   <div className="py-8">
-                    <h3 className="text-3xl font-bold mb-4">{card.title}</h3>
-                    <p className="mb-3">{card.description}</p>
-                    <p className="text-gray-700 text-sm">{card.schedule}</p>
+                    <h3 className="text-3xl font-bold mb-4 text-gray-800">{card.title}</h3>
+                    <p className="mb-3 text-gray-700">{card.description}</p>
+                    <p className="text-gray-600 text-sm">{card.schedule}</p>
                   </div>
                   <a
                     href="#"

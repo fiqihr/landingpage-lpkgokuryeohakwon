@@ -47,14 +47,9 @@ const Biaya = () => {
       <h4 className="text-2xl text-primary font-bold mb-4">
         Biaya Pendidikan:
       </h4>
-      <p className="">
+      <p className="text-gray-700">
         <span className="font-bold">Rp. 2.500.000</span> (Garansi sampai lulus)
       </p>
-      {/* <ul className="list-disc ml-4">
-        <li>asa</li>
-        <li>asa</li>
-        <li>asa</li>
-      </ul> */}
     </div>
   );
 };
@@ -65,7 +60,7 @@ const Persyaratan = () => {
   return (
     <div className={CardStyle}>
       <h4 className="text-2xl text-primary font-bold mb-4">Persyaratan:</h4>
-      <ul className="list-disc ml-4">
+      <ul className="list-disc ml-4 text-gray-700">
         <li>Pria/Wanita usia 18 - 39 tahun</li>
         <li>Minimal Ijazah SMP/MTS/paket B</li>
         <li>Tidak buta warna total</li>
@@ -84,7 +79,7 @@ const Fasilitas = () => {
       <h4 className="text-2xl text-primary font-bold mb-4">
         Fasilitas:
       </h4>
-      <ul className="list-disc ml-4">
+      <ul className="list-disc ml-4 text-gray-700">
         <li>Kelas yang bersih dan nyaman</li>
         <li>dan lain lain</li>
         <li>dan lain lain</li>
@@ -98,7 +93,7 @@ const Dokumen = () => {
   return (
     <div className={CardStyle}>
       <h4 className="text-2xl text-primary font-bold mb-4">Dokumen Syarat Pendaftaran:</h4>
-      <ul className="list-disc ml-4">
+      <ul className="list-disc ml-4 text-gray-700">
         <li>Akte Kelahiran</li>
         <li>Ijazah Terakhir</li>
         <li>KK (Kartu Keluarga)</li>

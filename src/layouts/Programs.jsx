@@ -22,7 +22,7 @@ const Programs = () => {
                 />
                 <div className="mx-6 mt-6 mb-20 text-center md:text-left">
                   <h4 className="text-2xl font-bold">{card.title}</h4>
-                  <p className="">{card.description}</p>
+                  <p className="text-gray-700">{card.description}</p>
                   <a href={card.title.toLowerCase()}
                     className="absolute bottom-6 left-1/2 transform -translate-x-1/2 bg-primary text-white rounded-lg px-6 py-2 font-bold hover:-translate-y-1 hover:shadow-xl hover:transition-all duration-200 hover:opacity-90"
                     

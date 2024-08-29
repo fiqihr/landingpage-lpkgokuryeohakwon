@@ -1,7 +1,7 @@
 const HubungiKami = () => {
   return (
     <section id="hubungikami">
-      <div className="mt-20 mb-5 mx-auto py-10 px-4 bg-gray-100 flex flex-col md:flex-row">
+      <div className="mt-20 mb-5 mx-auto py-10 px-4 bg-gradient-to-bl from-gray-50 via-gray-100 to-gray-200 flex flex-col md:flex-row">
         <div className="flex justify-center md:justify-end md:w-1/3 mb-5 md:mb-0">
           <img className="w-1/2 md:w-2/3" src="/images/question.svg" alt="question" />
         </div>

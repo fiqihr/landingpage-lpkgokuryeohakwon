@@ -7,7 +7,7 @@ const LokasiKontak = () => {
             <span className="border-b-4 border-gray-200">Lokasi</span>
           </h1>
           <div className="text-center">
-            <p className="mb-4 mx-4">
+            <p className="mb-4 mx-4 text-gray-700">
               Desa Karanganyar RT 03/01, Karanganyar, Kec. Madukara, Kab.
               Banjarnegara, Jawa Tengah 53482
             </p>

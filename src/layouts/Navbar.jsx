@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import {
   Navbar,
   Collapse,
-  Typography,
   IconButton,
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
@@ -10,85 +9,85 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 function NavList() {
   return (
     <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-      <Typography
+      <div
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-bold "
+        className="p-1 font-bold text-sm"
       >
         <a
           href="/#tentangkami"
-          className="flex items-center hover:text-primary transition-colors"
+          className="flex items-center hover:text-primary transition-all hover:bg-gray-100 hover:rounded-md hover:px-1 "
         >
           Tentang Kami
         </a>
-      </Typography>
-      <Typography
+      </div>
+      <div
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-bold "
+        className="p-1 font-bold text-sm"
       >
         <a
           href="/#program"
-          className="flex items-center hover:text-primary transition-colors"
+          className="flex items-center hover:text-primary transition-all hover:bg-gray-100 hover:rounded-md hover:px-1"
         >
           Program
         </a>
-      </Typography>
-      <Typography
+      </div>
+      <div
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-bold "
+        className="p-1 font-bold text-sm"
       >
         <a
           href="/#infomasuk"
-          className="flex items-center hover:text-blue-500 transition-colors"
+          className="flex items-center hover:text-blue-500 transition-all hover:bg-gray-100 hover:rounded-md hover:px-1"
         >
           Info Masuk
         </a>
-      </Typography>
+      </div>
       
-      <Typography
+      <div
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-bold"
+        className="p-1 font-bold text-sm"
       >
         <a
           href="/#infokelas"
-          className="flex items-center hover:text-blue-500 transition-colors"
+          className="flex items-center hover:text-blue-500 transition-all hover:bg-gray-100 hover:rounded-md hover:px-1"
         >
           Info Kelas
         </a>
-      </Typography>
-      <Typography
+      </div>
+      <div
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-bold "
+        className="p-1 font-bold text-sm"
       >
         <a
           href="/#galerialumni"
-          className="flex items-center hover:text-blue-500 transition-colors"
+          className="flex items-center hover:text-blue-500 transition-all hover:bg-gray-100 hover:rounded-md hover:px-1"
         >
           Galeri Alumni
         </a>
-      </Typography>
-      <Typography
+      </div>
+      <div
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-bold"
+        className="p-1 font-bold text-sm"
       >
         <a
           href="/#infokelas"
-          className="bg-blue-700 py-3 px-5 text-white rounded-lg flex items-center hover:bg-opacity-80 hover:shadow-md transition-colors "
+          className="bg-blue-700 py-3 px-5 text-white rounded-lg flex items-center hover:bg-opacity-80 hover:shadow-md transition-colors text-sm "
         >
           <span className="mx-auto">Daftar Sekarang</span>
         </a>
-      </Typography>
+      </div>
     </ul>
   );
 }
@@ -130,14 +129,14 @@ export function NavbarSimple() {
       <div className="flex items-center justify-between text-blue-gray-900">
         <div className="flex">
           <img src="/images/logo.png" alt="logo" className="mr-2 h-12" />
-          <Typography
-            as="a"
+          <a
+            
             href="/#"
             variant="h6"
-            className="mr-4 cursor-pointer py-1.5 self-center text-center text-lg"
+            className="mr-4 cursor-pointer py-1.5 self-center text-center text-lg font-bold"
           >
             Gokuryeo Hakwon
-          </Typography>
+          </a>
         </div>
         <div className="hidden lg:block">
           <NavList />
