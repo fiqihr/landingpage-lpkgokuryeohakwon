@@ -8,6 +8,7 @@ export default function InfoMasuk() {
     { label: "Dokumen", content: <Dokumen /> },
     { label: "Fasilitas", content: <Fasilitas /> },
     { label: "Biaya", content: <Biaya /> },
+    { label: "Cara Pendaftaran", content: <TataCaraPendaftaran /> },
   ];
 
   return (
@@ -98,6 +99,20 @@ const Dokumen = () => {
         <li>Ijazah Terakhir</li>
         <li>KK (Kartu Keluarga)</li>
         <li>KTP (Kartu Tanda Penduduk)</li>
+      </ul>
+    </div>
+  );
+};
+
+const TataCaraPendaftaran = () => {
+  return (
+    <div className={CardStyle}>
+      <h4 className="text-2xl text-primary font-bold mb-4">Tata Cara Pendaftaran:</h4>
+      <ul className="list-decimal ml-4 text-gray-700">
+      <li>cara pertama</li>
+      <li>cara selanjutnya</li>
+      <li>cara selanjutnya</li>
+      <li>cara selanjutnya</li>
       </ul>
     </div>
   );
