@@ -19,7 +19,7 @@ const Jumbotron = () => {
             <div className="mt-8">
               <a
                 href="/#hubungikami"
-                className=" bg-primary text-white rounded-lg px-6 py-4 text-xl font-bold hover:bg-transparent hover:text-primary hover:bg-gray-300 transition-all duration-200"
+                className=" bg-primary text-white rounded-lg px-6 py-4 text-xl font-bold hover:bg-transparent hover:text-primary hover:bg-white transition-all duration-200"
               >
                 Hubungi Kami
               </a>
