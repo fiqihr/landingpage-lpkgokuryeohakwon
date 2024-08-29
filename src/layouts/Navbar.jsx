@@ -17,7 +17,7 @@ function NavList() {
       >
         <a
           href="/#tentangkami"
-          className="flex items-center hover:text-primary transition-all hover:bg-gray-100 hover:rounded-md hover:px-1 "
+          className="flex items-center text-gray-700 hover:text-primary transition-all hover:bg-gray-100 hover:rounded-md hover:pr-1 "
         >
           Tentang Kami
         </a>
@@ -30,7 +30,7 @@ function NavList() {
       >
         <a
           href="/#program"
-          className="flex items-center hover:text-primary transition-all hover:bg-gray-100 hover:rounded-md hover:px-1"
+          className="flex items-center text-gray-700 hover:text-primary transition-all hover:bg-gray-100 hover:rounded-md hover:pr-1"
         >
           Program
         </a>
@@ -43,7 +43,7 @@ function NavList() {
       >
         <a
           href="/#infomasuk"
-          className="flex items-center hover:text-blue-500 transition-all hover:bg-gray-100 hover:rounded-md hover:px-1"
+          className="flex items-center text-gray-700 hover:text-blue-500 transition-all hover:bg-gray-100 hover:rounded-md hover:pr-1"
         >
           Info Masuk
         </a>
@@ -57,7 +57,7 @@ function NavList() {
       >
         <a
           href="/#infokelas"
-          className="flex items-center hover:text-blue-500 transition-all hover:bg-gray-100 hover:rounded-md hover:px-1"
+          className="flex items-center text-gray-700 hover:text-blue-500 transition-all hover:bg-gray-100 hover:rounded-md hover:pr-1"
         >
           Info Kelas
         </a>
@@ -70,7 +70,7 @@ function NavList() {
       >
         <a
           href="/#galerialumni"
-          className="flex items-center hover:text-blue-500 transition-all hover:bg-gray-100 hover:rounded-md hover:px-1"
+          className="flex items-center text-gray-700 hover:text-blue-500 transition-all hover:bg-gray-100 hover:rounded-md hover:pr-1"
         >
           Galeri Alumni
         </a>
