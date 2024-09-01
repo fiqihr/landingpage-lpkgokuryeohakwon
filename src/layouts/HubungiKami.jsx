@@ -13,7 +13,7 @@ const HubungiKami = () => {
             Silahkan hubungi kami untuk informasi lebih lanjut
           </p>
           <div className="flex justify-center pt-4 gap-3">
-            <a target="_blank" href="https://wa.me/6281234567890?text=Hai%20kak,%20saya%20ingin%20bertanya%20seputar%20kerja%20ke%20Korea%20??">
+            <a target="_blank" href="https://wa.me/6285868553122?text=Hai%20kak,%20saya%20ingin%20bertanya%20seputar%20kerja%20ke%20Korea%20??">
               <img
                 className="h-20 md:h-16 filter grayscale hover:filter-none transition duration-300 ease-in-out"
                 src="/icons/whatsapp.svg"
