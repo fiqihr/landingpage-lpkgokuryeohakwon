@@ -112,7 +112,7 @@ const TataCaraPendaftaran = () => {
     <div className={CardStyle}>
       <h4 className="text-2xl text-primary font-bold mb-4">Tata Cara Pendaftaran:</h4>
       <ul className="list-decimal ml-4 text-gray-700">
-      <li>Silahkan memilih salah satu kelas yang tersedia di menu <span><a className="bg-white py-1 px-2 font-bold rounded-md hover:underline text-gray-700" href="/#infokelas">Info Kelas</a></span></li>
+      <li>Silahkan memilih salah satu kelas yang tersedia di menu <span><a className=" font-bold rounded-md hover:underline text-gray-700" href="/#infokelas">Info Kelas</a></span></li>
       <li>Klik tombol <span className="font-bold text-gray-700">Gabung Sekarang</span></li>
       <li>Silahkan isi data anda sesuai form yang disediakan</li>
       <li>Setelah data terisi semua, klik tombol <span className="font-bold text-gray-700">Kirim</span></li>
