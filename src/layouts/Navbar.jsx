@@ -32,7 +32,7 @@ function NavList() {
           href="/#program"
           className="flex items-center text-gray-700 hover:text-primary transition-all hover:bg-gray-100 hover:rounded-md hover:pr-1"
         >
-          Program
+          Sektor Pekerjaan
         </a>
       </div>
       <div

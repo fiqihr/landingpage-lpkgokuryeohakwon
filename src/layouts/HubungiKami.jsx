@@ -9,11 +9,11 @@ const HubungiKami = () => {
           <h4 className="mt-6 md:mt-0 lg:mt-0 text-4xl lg:text-5xl  font-bold text-center text-primary">
             Masih bingung? Mau tanya-tanya?
           </h4>
-          <p className="text-center text-gray-800 text-md md:text-lg mt-2">
+          <p className="text-center text-gray-800 text-md md:text-lg mt-2 italic">
             Silahkan hubungi kami untuk informasi lebih lanjut
           </p>
           <div className="flex justify-center pt-4 gap-3">
-            <a target="_blank" href="https://wa.me/6281234567890">
+            <a target="_blank" href="https://wa.me/6281234567890?text=Hai%20kak,%20saya%20ingin%20bertanya%20seputar%20kerja%20ke%20Korea%20??">
               <img
                 className="h-20 md:h-16 filter grayscale hover:filter-none transition duration-300 ease-in-out"
                 src="/icons/whatsapp.svg"

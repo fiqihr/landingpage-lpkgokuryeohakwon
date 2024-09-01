@@ -19,7 +19,7 @@ const Footer = () => {
             <h4 className="text-2xl font-bold mb-2 lg:mb-4">Alamat Kami</h4>
             <div className="text-sm mb-2">
               <div className="flex items-center ">
-                <p className="w-2/3">Desa Karanganyar RT 03/01, Karang Anyar Wetan, Karanganyar, Kec.Madukara, Kab.Banjarnegara, Jawa Tengah, 53482</p>
+                <p className="w-5/6">Desa Karanganyar RT03 RW01, Kec.Madukara, Kab.Banjarnegara, Jawa Tengah, 53482</p>
               </div>
             </div>
           </div>
@@ -28,7 +28,7 @@ const Footer = () => {
             <div className="text-sm mb-2">
               <div className="flex items-center gap-1">
                 <img className="h-5" src="/icons/phone.svg" alt="" />
-                <span> +628123456789</span>
+                <span> +62 858-6855-3122</span>
               </div>
             </div>
             <div className="text-sm">
@@ -42,7 +42,7 @@ const Footer = () => {
             <h4 className="text-2xl font-bold mb-2 lg:mb-4">Ikuti Kami</h4>
             <a
               href="https://www.facebook.com/lpk.gokuryeo"
-              className="text-sm mb-2"
+              className="text-sm mb-2" target="_blank"
             >
               <div className="flex items-center gap-1">
                 <img className="h-5" src="/icons/facebook.svg" alt="" />
@@ -51,7 +51,7 @@ const Footer = () => {
             </a>
             <a
               href="https://www.instagram.com/gokuryeo_hakwon/"
-              className="text-sm mb-2"
+              className="text-sm mb-2" target="_blank"
             >
               <div className="flex items-center gap-1">
                 <img className="h-5" src="/icons/instagram.svg" alt="" />
@@ -61,7 +61,7 @@ const Footer = () => {
 
             <a
               href="https://www.tiktok.com/@gokuryeo_hakwon"
-              className="text-sm"
+              className="text-sm" target="_blank"
             >
               <div className="flex items-center gap-1">
                 <img className="h-5" src="/icons/tiktok.svg" alt="" />

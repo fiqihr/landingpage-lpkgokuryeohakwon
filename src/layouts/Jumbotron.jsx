@@ -9,12 +9,17 @@ const Jumbotron = () => {
       <div className=" container mx-auto relative z-10">
         <div className="flex flex-wrap">
           <div className="w-full md:w-1/2 lg:w-2/3 self-center px-4 text-white my-32">
-            <h2 className="text-2xl lg:text-5xl font-bold">Selamat Datang di</h2>
-            <h2 className="text-5xl md:text-4xl lg:text-6xl font-bold">LPK Gokuryeo Hakwon</h2>
-            <p className="text-base mt-4">
-              Ini adalah teks yang nanti berisi deskripsi dari LPK Gokuryeo Hakwon.
-              Ini adalah teks yang nanti berisi deskripsi dari LPK Gokuryeo Hakwon.
-              Ini adalah teks yang nanti berisi deskripsi dari LPK Gokuryeo Hakwon.
+            <h2 className="text-2xl lg:text-5xl font-bold">
+              Selamat Datang di
+            </h2>
+            <h2 className="text-5xl md:text-4xl lg:text-6xl font-bold">
+              LPK Gokuryeo Hakwon
+            </h2>
+            <p className="text-lg mt-4">
+              Kami siap memandu Anda menuju kesempatan kerja di Korea dengan
+              penghasilan fantastis melalui program resmi pemerintah G to G.
+              <br></br> Bersama kami, raih masa depan cerah dan karir
+              internasional yang gemilang!
             </p>
             <div className="mt-8">
               <a

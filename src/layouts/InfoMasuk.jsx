@@ -48,9 +48,11 @@ const Biaya = () => {
       <h4 className="text-2xl text-primary font-bold mb-4">
         Biaya Pendidikan:
       </h4>
-      <p className="text-gray-700">
-        <span className="font-bold">Rp. 2.500.000</span> (Garansi sampai lulus)
+      <p className="text-gray-700">Biaya pendidikan bisa dibayarkan bertahap</p>
+      <p className="text-gray-800 my-4">
+        <span className="font-bold text-2xl rounded-md bg-white px-4 py-2">Rp. 2.500.000</span> 
       </p>
+      <p className="text-gray-700 italic text-sm">(Garansi sampai lulus)</p>
     </div>
   );
 };
@@ -78,11 +80,12 @@ const Fasilitas = () => {
   return (
     <div className={CardStyle}>
       <h4 className="text-2xl text-primary font-bold mb-4">
-        Fasilitas:
+        Fasilitas & Layanan yang didapatkan:
       </h4>
       <ul className="list-disc ml-4 text-gray-700">
         <li>Kelas yang bersih dan nyaman</li>
-        <li>dan lain lain</li>
+        <li>Dibantu & dibimbing dari proses belajar sampai terbang Kerja ke Korea</li>
+        <li>Jika 1 kali ujian tidak lulus, boleh mengulang pendidikan <span className="font-bold">GRATIS</span></li>
         <li>dan lain lain</li>
         <li>dan lain lain</li>
       </ul>
@@ -109,10 +112,11 @@ const TataCaraPendaftaran = () => {
     <div className={CardStyle}>
       <h4 className="text-2xl text-primary font-bold mb-4">Tata Cara Pendaftaran:</h4>
       <ul className="list-decimal ml-4 text-gray-700">
-      <li>cara pertama</li>
-      <li>cara selanjutnya</li>
-      <li>cara selanjutnya</li>
-      <li>cara selanjutnya</li>
+      <li>Silahkan memilih salah satu kelas yang tersedia di menu <span><a className="bg-white py-1 px-2 font-bold rounded-md hover:underline text-gray-700" href="/#infokelas">Info Kelas</a></span></li>
+      <li>Klik tombol <span className="font-bold text-gray-700">Gabung Sekarang</span></li>
+      <li>Silahkan isi data anda sesuai form yang disediakan</li>
+      <li>Setelah data terisi semua, klik tombol <span className="font-bold text-gray-700">Kirim</span></li>
+      <li>Untuk konfirmasi, bisa hubungi kontak kami yang ada di bawah 👇</li>
       </ul>
     </div>
   );

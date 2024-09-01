@@ -3,14 +3,14 @@ const InfoKelas = () => {
     {
       id: 1,
       title: "Kelas Desember 2024",
-      description: "Dibuka kelas insentif bahasa Korea selama 3 bulan",
-      schedule: "Senin - Sabtu pukul 09:00 - 16:00",
+      description: "Dibuka kelas Insentif bahasa Korea selama 3 bulan",
+      schedule: "Senin - Sabtu pukul 09:00 WIB - 16:00 WIB",
     },
     {
       id: 2,
       title: "Kelas Januari 2025",
-      description: "Dibuka kelas insentif bahasa Korea selama 6 bulan",
-      schedule: "Senin - Sabtu pukul 19:00 - 22:00",
+      description: "Dibuka kelas Reguler bahasa Korea selama 6 bulan",
+      schedule: "Senin - Sabtu pukul 19:00 WIB - 22:00 WIB",
     },
   ];
   return (
@@ -27,7 +27,7 @@ const InfoKelas = () => {
                   <div className="py-8">
                     <h3 className="text-3xl font-bold mb-4 text-gray-800">{card.title}</h3>
                     <p className="mb-3 text-gray-700">{card.description}</p>
-                    <p className="text-gray-600 text-sm">{card.schedule}</p>
+                    <p className="text-gray-600 text-sm italic">{card.schedule}</p>
                   </div>
                   <a
                     href="#"
