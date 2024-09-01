@@ -19,7 +19,7 @@ const Programs = () => {
             programsData.map((card) => (
               <div
                 key={card.id}
-                className="relative border-1 shadow-lg w-full md:w-80 rounded-lg "
+                className="relative border-t-2 shadow-lg w-full md:w-80 rounded-lg "
               >
                 <img
                   className="h-52 w-2/3 mx-auto mt-6"
