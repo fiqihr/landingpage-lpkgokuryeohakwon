@@ -1,4 +1,9 @@
+import { Link, useNavigate } from "react-router-dom";
+import { Button1 } from "./Components/Button/Button";
+
 const Jumbotron = () => {
+  const navigate = useNavigate();
+
   return (
     // <section id="home" className="pt-20 pb-16 bg-gradient-to-r from-blue-800 via-blue-700 to-blue-600">
     <section
@@ -22,12 +27,7 @@ const Jumbotron = () => {
               internasional yang gemilang!
             </p>
             <div className="mt-8">
-              <a
-                href="/#hubungikami"
-                className=" bg-primary text-white rounded-lg px-6 py-4 text-xl font-bold hover:bg-transparent hover:text-primary hover:bg-white transition-all duration-200"
-              >
-                Hubungi Kami
-              </a>
+            <Button1 link="/#hubungikami" name="Hubungi Kami" />
             </div>
           </div>
         </div>

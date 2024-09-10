@@ -5,6 +5,8 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Link } from "react-router-dom";
+import { Button2 } from "./Components/Button/Button";
 
 function NavList() {
   return (
@@ -15,12 +17,12 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-bold text-sm"
       >
-        <a
-          href="/#tentangkami"
-          className="flex items-center text-gray-700 hover:text-primary transition-all hover:bg-gray-100 hover:rounded-md hover:pr-1 "
+        <Link
+          to="/#tentangkami"
+          className="flex items-center text-gray-700 hover:border-b-2 hover:border-primary transition-all "
         >
           Tentang Kami
-        </a>
+        </Link>
       </div>
       <div
         as="li"
@@ -28,12 +30,12 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-bold text-sm"
       >
-        <a
-          href="/#program"
-          className="flex items-center text-gray-700 hover:text-primary transition-all hover:bg-gray-100 hover:rounded-md hover:pr-1"
+        <Link
+          to="/#program"
+          className="flex items-center text-gray-700 hover:border-b-2 hover:border-primary transition-all "
         >
           Sektor Pekerjaan
-        </a>
+        </Link>
       </div>
       <div
         as="li"
@@ -41,12 +43,12 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-bold text-sm"
       >
-        <a
-          href="/#infomasuk"
-          className="flex items-center text-gray-700 hover:text-blue-500 transition-all hover:bg-gray-100 hover:rounded-md hover:pr-1"
+        <Link
+          to="/#infomasuk"
+          className="flex items-center text-gray-700 hover:border-b-2 hover:border-primary transition-all "
         >
           Info Masuk
-        </a>
+        </Link>
       </div>
       
       <div
@@ -55,12 +57,12 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-bold text-sm"
       >
-        <a
-          href="/#infokelas"
-          className="flex items-center text-gray-700 hover:text-blue-500 transition-all hover:bg-gray-100 hover:rounded-md hover:pr-1"
+        <Link
+          to="/#infokelas"
+          className="flex items-center text-gray-700 hover:border-b-2 hover:border-primary transition-all "
         >
           Info Kelas
-        </a>
+        </Link>
       </div>
       <div
         as="li"
@@ -68,12 +70,12 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-bold text-sm"
       >
-        <a
-          href="/#galerialumni"
-          className="flex items-center text-gray-700 hover:text-blue-500 transition-all hover:bg-gray-100 hover:rounded-md hover:pr-1"
+        <Link
+          to="/#galerialumni"
+          className="flex items-center text-gray-700 hover:border-b-2 hover:border-primary transition-all "
         >
           Galeri Alumni
-        </a>
+        </Link>
       </div>
       <div
         as="li"
@@ -81,12 +83,8 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-bold text-sm"
       >
-        <a
-          href="/#infokelas"
-          className="bg-blue-700 py-3 px-5 text-white rounded-lg flex items-center hover:bg-opacity-80 hover:shadow-md transition-colors text-sm "
-        >
-          <span className="mx-auto">Daftar Sekarang</span>
-        </a>
+      <Button2 link="/#infokelas" name="Daftar Sekarang"/>
+
       </div>
     </ul>
   );

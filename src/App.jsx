@@ -8,11 +8,13 @@ import Programs from "./layouts/Programs";
 import TentangKami from "./layouts/TentangKami";
 import Footer from "./layouts/Footer";
 import HubungiKami from "./layouts/HubungiKami";
+import ScrollToHashElement from "./layouts/Components/Button/ScrollToHash";
 
 function App() {
   return (
     <>
       <div className="bg-white h-20"></div>
+      <ScrollToHashElement />
       <NavbarSimple />
       <Jumbotron />
       <TentangKami />
@@ -21,7 +23,7 @@ function App() {
       <InfoKelas />
       <GaleriAlumni />
       <LokasiKontak />
-      <HubungiKami/> 
+      <HubungiKami />
       <Footer />
     </>
   );

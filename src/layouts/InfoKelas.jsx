@@ -11,6 +11,7 @@ import {
   update,
 } from "firebase/database";
 import { useNavigate } from "react-router-dom";
+import { Button4 } from "./Components/Button/Button";
 
 const InfoKelas = () => {
   // const cardInfo = [
@@ -61,16 +62,16 @@ const InfoKelas = () => {
               <div className="mb-8 bg-gray-100 rounded-lg shadow-lg ">
                 <div className="flex flex-wrap justify-between mx-8">
                   <div className="py-8">
-                    <h3 className="text-3xl font-bold mb-4 text-gray-800">{card.title}</h3>
+                    <h3 className="text-3xl font-bold mb-4 text-gray-800">
+                      {card.title}
+                    </h3>
                     <p className="mb-3 text-gray-700">{card.description}</p>
-                    <p className="text-gray-600 text-sm italic">{card.schedule}</p>
+                    <p className="text-gray-600 text-sm italic">
+                      {card.schedule}
+                    </p>
                   </div>
-                  <a
-                    href={card.linkPendaftaran}
-                    className="mb-4 mx-auto md:mr-0 lg:mr-0 rounded-lg shadow-md bg-primary text-white text-center self-center font-bold justify-center px-8 py-4 hover:-translate-y-1 hover:shadow-xl hover:transition-all duration-200 hover:opacity-90"
-                  >
-                    <span>Gabung Sekarang</span>
-                  </a>
+                  <Button4 link={card.linkPendaftaran} name = "Gabung Sekarang"></Button4>
+                  
                 </div>
               </div>
             </div>

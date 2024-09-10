@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import programsData from "../data/ProgramsData";
+import { Button2, Button3 } from "./Components/Button/Button";
 
 const Programs = () => {
   return (
@@ -29,12 +30,7 @@ const Programs = () => {
                 <div className="mx-6 mt-6 mb-20 text-center md:text-left">
                   <h4 className="text-2xl font-bold">{card.title}</h4>
                   <p className="text-gray-700">{card.description}</p>
-                  <a
-                    href={card.title.toLowerCase()}
-                    className="absolute bottom-6 left-1/2 transform -translate-x-1/2 bg-primary text-white rounded-lg px-6 py-2 font-bold hover:-translate-y-1 hover:shadow-xl hover:transition-all duration-200 hover:opacity-90"
-                  >
-                    Info Lanjut
-                  </a>
+                  <Button3 link={card.title.toLowerCase()} name="Info Lanjut"></Button3>
                 </div>
               </div>
             ))}
@@ -54,12 +50,12 @@ function Card(props) {
       <div className="mx-6 mt-6 mb-20 text-center md:text-left">
         <h4 className="text-2xl font-bold">{title}</h4>
         <p className="">{description}</p>
-        <a
+        <Link
           className="absolute bottom-6 left-1/2 transform -translate-x-1/2 md:transform-none md:left-auto bg-primary text-white rounded-full px-4 py-2"
-          href="#"
+          to="#"
         >
-          Info Lanjut
-        </a>
+          Info Lanjutadsf
+        </Link>
       </div>
     </div>
   );

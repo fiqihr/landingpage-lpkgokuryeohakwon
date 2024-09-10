@@ -2,12 +2,18 @@ import { useParams } from "react-router-dom";
 import programsData from "../data/ProgramsData";
 import { NavbarSimple } from "../layouts/Navbar";
 import Footer from "../layouts/Footer";
+import { useEffect } from "react";
 
 const DetailPage = () => {
   const { title } = useParams();
   const item = programsData.find(
     (item) => item.title.toLowerCase() === title.toLowerCase()
   );
+
+  // Scroll ke atas saat komponen di-render
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   if (!item) {
     return <div className="">Item tidak ditemukan</div>;

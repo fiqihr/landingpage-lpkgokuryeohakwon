@@ -4,6 +4,7 @@ import { doSignOut } from "../../../firebase/auth";
 import { useAuth } from "../../../contexts/authContext";
 import InfoKelasIndex from "./InfoKelas/InfoKelasIndex";
 import NavbarAdmin from "./Navbar/NavbarAdmin";
+import GaleriAlumniIndex from "./GaleriAlumni/GaleriAlumniIndex";
 
 const DashboardAdmin = () => {
   const navigate = useNavigate();
@@ -27,25 +28,8 @@ const DashboardAdmin = () => {
 
       {/* Info Kelas Index */}
       <InfoKelasIndex />
-      <h1>asdfdas</h1>
-      <h1>asdfdas</h1>
-      <h1>asdfdas</h1>
-      <h1>asdfdas</h1>
-      <h1>asdfdas</h1>
-      <h1>asdfdas</h1>
-      <h1>asdfdas</h1>
-      <h1>asdfdas</h1>
-      <h1>asdfdas</h1>
-      <h1>asdfdas</h1>
-      <h1>asdfdas</h1>
-      <h1>asdfdas</h1>
-      <h1>asdfdas</h1>
-      <h1>asdfdas</h1>
-      <h1>asdfdas</h1>
-      <h1>asdfdas</h1>
-      <h1>asdfdas</h1>
-      <h1>asdfdas</h1>
-      <h1>asdfdas</h1>
+      <GaleriAlumniIndex />
+      
     </div>
   );
 };

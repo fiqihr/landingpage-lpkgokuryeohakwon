@@ -42,7 +42,7 @@ const Footer = () => {
             <h4 className="text-2xl font-bold mb-2 lg:mb-4">Ikuti Kami</h4>
             <a
               href="https://www.facebook.com/lpk.gokuryeo"
-              className="text-sm mb-2" target="_blank"
+              className="text-sm mb-2 hover:opacity-60" target="_blank"
             >
               <div className="flex items-center gap-1">
                 <img className="h-5" src="/icons/facebook.svg" alt="" />
@@ -51,7 +51,7 @@ const Footer = () => {
             </a>
             <a
               href="https://www.instagram.com/gokuryeo_hakwon/"
-              className="text-sm mb-2" target="_blank"
+              className="text-sm mb-2 hover:opacity-60" target="_blank"
             >
               <div className="flex items-center gap-1">
                 <img className="h-5" src="/icons/instagram.svg" alt="" />
@@ -61,7 +61,7 @@ const Footer = () => {
 
             <a
               href="https://www.tiktok.com/@gokuryeo_hakwon"
-              className="text-sm" target="_blank"
+              className="text-sm hover:opacity-60" target="_blank"
             >
               <div className="flex items-center gap-1">
                 <img className="h-5" src="/icons/tiktok.svg" alt="" />
