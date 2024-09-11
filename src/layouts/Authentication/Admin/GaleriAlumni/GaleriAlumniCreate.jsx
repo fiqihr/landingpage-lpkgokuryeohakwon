@@ -130,7 +130,7 @@ const GaleriAlumniCreate = () => {
             onClick={handleAdd}
           >
             <div className="flex justify-center gap-1 items-center">
-              <img src="/icons/add.svg" alt="add" className="h-6" />
+              <img src="/icons/save.svg" alt="add" className="h-6" />
               Simpan Alumni Baru
             </div>
           </button>
