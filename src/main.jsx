@@ -10,6 +10,7 @@ import LoginAdmin from "./layouts/Authentication/LoginAdmin.jsx";
 import { AuthProvider } from "./contexts/authContext/index.jsx";
 import RegisterAdmin from "./layouts/Authentication/RegisterAdmin.jsx";
 import InfoKelasCreate from "./layouts/Authentication/Admin/InfoKelas/InfoKelasCreate.jsx";
+import GaleriAlumniCreate from "./layouts/Authentication/Admin/GaleriAlumni/GaleriAlumniCreate.jsx";
 
 const router = createBrowserRouter([
   {
@@ -49,6 +50,14 @@ const router = createBrowserRouter([
     element: (
       <AuthProvider>
         <InfoKelasCreate />,
+      </AuthProvider>
+    ),
+  },
+  {
+    path: "dashboardadmin/galerialumnicreate",
+    element: (
+      <AuthProvider>
+        <GaleriAlumniCreate />,
       </AuthProvider>
     ),
   },
