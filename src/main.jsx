@@ -11,6 +11,11 @@ import { AuthProvider } from "./contexts/authContext/index.jsx";
 import RegisterAdmin from "./layouts/Authentication/RegisterAdmin.jsx";
 import InfoKelasCreate from "./layouts/Authentication/Admin/InfoKelas/InfoKelasCreate.jsx";
 import GaleriAlumniCreate from "./layouts/Authentication/Admin/GaleriAlumni/GaleriAlumniCreate.jsx";
+import ArtikelCreate from "./layouts/Authentication/Admin/Artikel/ArtikelCreate.jsx";
+import ArtikelShow from "./layouts/Authentication/Admin/Artikel/ArtikelShow.jsx";
+import Artikel from "./layouts/Artikel.jsx";
+import SemuaArtikel from "./pages/SemuaArtikel.jsx";
+import ArtikelTampil from "./pages/ArtikelTampil.jsx";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +25,14 @@ const router = createBrowserRouter([
   {
     path: "/:title",
     element: <DetailPage data={programsData} />,
+  },
+  {
+    path: "/semua-artikel",
+    element: <SemuaArtikel />,
+  },
+  {
+    path: "/artikelshow/:id",
+    element: <ArtikelTampil />,
   },
   {
     path: "/loginadmin",
@@ -58,6 +71,22 @@ const router = createBrowserRouter([
     element: (
       <AuthProvider>
         <GaleriAlumniCreate />,
+      </AuthProvider>
+    ),
+  },
+  {
+    path: "dashboardadmin/artikelcreate",
+    element: (
+      <AuthProvider>
+        <ArtikelCreate />,
+      </AuthProvider>
+    ),
+  },
+  {
+    path: "dashboardadmin/artikelshow/:id",
+    element: (
+      <AuthProvider>
+        <ArtikelShow />,
       </AuthProvider>
     ),
   },

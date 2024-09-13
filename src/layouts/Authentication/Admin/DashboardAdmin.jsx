@@ -5,6 +5,7 @@ import { useAuth } from "../../../contexts/authContext";
 import InfoKelasIndex from "./InfoKelas/InfoKelasIndex";
 import NavbarAdmin from "./Navbar/NavbarAdmin";
 import GaleriAlumniIndex from "./GaleriAlumni/GaleriAlumniIndex";
+import ArtikelIndex from "./Artikel/ArtikelIndex";
 
 const DashboardAdmin = () => {
   const navigate = useNavigate();
@@ -34,6 +35,7 @@ const DashboardAdmin = () => {
       {/* Info Kelas Index */}
       <InfoKelasIndex />
       <GaleriAlumniIndex />
+      <ArtikelIndex />
       <button
         className="fixed bottom-8 right-8 text-primary hover:underline transition-all text-base font-bold bg-opacity-50 bg-white px-4 py-2 rounded-lg shadow-md"
         onClick={() => window.open("/", "_blank", "noopener,noreferrer")}

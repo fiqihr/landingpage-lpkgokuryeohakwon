@@ -9,6 +9,8 @@ import TentangKami from "./layouts/TentangKami";
 import Footer from "./layouts/Footer";
 import HubungiKami from "./layouts/HubungiKami";
 import ScrollToHashElement from "./layouts/Components/Button/ScrollToHash";
+import Artikel from "./layouts/Artikel";
+import { Link } from "react-router-dom";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
       <NavbarSimple />
       <Jumbotron />
       <TentangKami />
+      {/* <Link to={"/artikel"}>Kunjungi berita terbaru kami</Link> */}
+      <Artikel />
       <Programs />
       <InfoMasuk />
       <InfoKelas />
