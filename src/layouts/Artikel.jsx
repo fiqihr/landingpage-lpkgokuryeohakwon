@@ -28,7 +28,7 @@ const Artikel = () => {
     <section id="artikel" className="pt-10 pb-10">
       <div className="container mx-auto">
         <h1 className="lg:text-5xl text-4xl font-bold text-center lg:mt-20 lg:mb-20 my-10 text-primary">
-          <span className="border-b-4 border-gray-200">Terbaru</span>
+          <span className="border-b-4 border-gray-200">Berita Terbaru</span>
         </h1>
         {displayedArticles.length === 0 ? (
           <p>Tidak ada artikel.</p>

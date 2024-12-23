@@ -27,7 +27,7 @@ const Jumbotron = () => {
               internasional yang gemilang!
             </p>
             <div className="mt-8">
-            <Button1 link="/#hubungikami" name="Hubungi Kami" />
+              <Button1 link="/#hubungikami" name="Hubungi Kami" />
             </div>
           </div>
         </div>
