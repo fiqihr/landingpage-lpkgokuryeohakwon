@@ -45,9 +45,14 @@ const ArtikelIndex = () => {
           </div>
         </button>
       </div>
-      <h2 className="mb-4">Klik salah satu artikel untuk melihat preview artikel dan mengedit artikel</h2>
+      <h2 className="mb-4">
+        Klik salah satu artikel untuk melihat preview artikel dan mengedit
+        artikel
+      </h2>
       {articles.length === 0 ? (
-        <p>Tidak ada artikel.</p>
+        <div className="flex justify-center my-12">
+          <p className="text-gray-500 italic">Sedang Memuat Data...</p>
+        </div>
       ) : (
         <ul>
           {articles.map((article) => (
@@ -70,7 +75,6 @@ const ArtikelIndex = () => {
 
               {/* Delete Button */}
               <div className="flex justify-center gap-2 -translate-y-5">
-                
                 <button
                   className="bg-red-500 text-white px-4 py-2 rounded-md hover:-translate-y-1 hover:shadow-md transition-all"
                   onClick={() => handleDelete(article.id)}

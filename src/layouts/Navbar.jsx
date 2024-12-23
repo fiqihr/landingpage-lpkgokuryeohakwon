@@ -1,9 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {
-  Navbar,
-  Collapse,
-  IconButton,
-} from "@material-tailwind/react";
+import { Navbar, Collapse, IconButton } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
 import { Button2 } from "./Components/Button/Button";
@@ -50,7 +46,7 @@ function NavList() {
           Info Masuk
         </Link>
       </div>
-      
+
       <div
         as="li"
         variant="small"
@@ -83,8 +79,7 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-bold text-sm"
       >
-      <Button2 link="/#infokelas" name="Daftar Sekarang"/>
-
+        <Button2 link="/#infokelas" name="Daftar Sekarang" />
       </div>
     </ul>
   );
@@ -126,9 +121,12 @@ export function NavbarSimple() {
     >
       <div className="flex items-center justify-between text-blue-gray-900">
         <div className="flex">
-          <img src="/images/logo.png" alt="logo" className="mr-2 h-12" />
+          <img
+            src="/images/logo-optimize.png"
+            alt="logo"
+            className="mr-2 h-12"
+          />
           <a
-            
             href="/#"
             variant="h6"
             className="mr-4 cursor-pointer py-1.5 self-center text-center text-lg font-bold"

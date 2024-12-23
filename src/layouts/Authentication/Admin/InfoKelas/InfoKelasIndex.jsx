@@ -151,7 +151,7 @@ const InfoKelasIndex = () => {
         </ul>
       ) : (
         <div className="flex justify-center my-12">
-          <h1 className="text-4xl font-bold">Sedang Memuat Data...</h1>
+          <p className="text-gray-500 italic">Sedang Memuat Data...</p>
         </div>
       )}
 

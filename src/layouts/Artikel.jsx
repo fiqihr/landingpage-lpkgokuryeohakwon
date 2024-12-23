@@ -45,7 +45,6 @@ const Artikel = () => {
                         className="rounded-md h-32"
                         src={article.mainImage}
                         alt={`Main image for ${article.title}`}
-                        
                         style={{ marginBottom: "10px" }}
                       />
                     )}
@@ -54,10 +53,10 @@ const Artikel = () => {
               </div>
             ))}
             <button
-              className="w-2/5 border rounded-md flex justify-center items-center hover:shadow-lg hover:-translate-y-1 transition-all max-h-56 "
+              className="w-2/5 rounded-md flex justify-center items-center  max-h-56 "
               onClick={handleNavigateToAllArticles}
             >
-              <div className="text-primary flex justify-center items-center">
+              <div className="text-primary flex justify-center items-center hover:opacity-75">
                 Lihat selengkapnya
                 <img src="/icons/right.svg" className="h-7" alt="" />
               </div>

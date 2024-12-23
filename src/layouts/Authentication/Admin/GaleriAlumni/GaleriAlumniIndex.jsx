@@ -80,52 +80,60 @@ const GaleriAlumniIndex = () => {
           </div>
         </button>
       </div>
-      {alumni.map((al) => (
-        <div key={al.id} className="mb-4">
-          <div className="flex flex-col md:flex-row bg-gray-100 rounded-md p-4">
-            <div className="flex w-full md:w-1/2 mx-auto">
-              <div className="py-8 mx-auto">
-                <img
-                  className="max-h-72 rounded-md"
-                  src={al.imageUrl}
-                  alt={al.name}
-                />
+      {alumni.length > 0 ? (
+        <div>
+          {alumni.map((al) => (
+            <div key={al.id} className="mb-4">
+              <div className="flex flex-col md:flex-row bg-gray-100 rounded-md p-4">
+                <div className="flex w-full md:w-1/2 mx-auto">
+                  <div className="py-8 mx-auto">
+                    <img
+                      className="max-h-72 rounded-md"
+                      src={al.imageUrl}
+                      alt={al.name}
+                    />
+                  </div>
+                </div>
+                <div className="w-full md:w-1/2 flex flex-col text-left justify-center p-4">
+                  <h4 className="text-3xl font-bold mb-4 text-gray-800">
+                    {al.name}
+                  </h4>
+                  <h4 className="text-xl font-bold mb-4 text-gray-800 italic">
+                    {al.age} <span>tahun</span>
+                  </h4>
+                  <p className="text-gray-700 text-sm">{al.description}</p>
+                </div>
+              </div>
+              <div className="flex justify-end">
+                <div className="w-1/2 flex justify-center gap-2 -translate-y-5">
+                  <button
+                    className="bg-amber-500 text-white px-4 py-2 rounded-md hover:-translate-y-1 hover:shadow-md transition-all"
+                    onClick={() => setEditAlumni(al)}
+                  >
+                    <div className="flex justify-center gap-1 items-center">
+                      <img src="/icons/edit.svg" alt="" className="h-6" />
+                      Edit Data Alumni
+                    </div>
+                  </button>
+                  <button
+                    className="bg-red-500 text-white px-4 py-2 rounded-md hover:-translate-y-1 hover:shadow-md transition-all"
+                    onClick={() => handleDelete(al.id)}
+                  >
+                    <div className="flex justify-center gap-1 items-center">
+                      <img src="/icons/delete.svg" alt="" className="h-6" />
+                      Hapus Data Alumni
+                    </div>
+                  </button>
+                </div>
               </div>
             </div>
-            <div className="w-full md:w-1/2 flex flex-col text-left justify-center p-4">
-              <h4 className="text-3xl font-bold mb-4 text-gray-800">
-                {al.name}
-              </h4>
-              <h4 className="text-xl font-bold mb-4 text-gray-800 italic">
-                {al.age} <span>tahun</span>
-              </h4>
-              <p className="text-gray-700 text-sm">{al.description}</p>
-            </div>
-          </div>
-          <div className="flex justify-end">
-            <div className="w-1/2 flex justify-center gap-2 -translate-y-5">
-              <button
-                className="bg-amber-500 text-white px-4 py-2 rounded-md hover:-translate-y-1 hover:shadow-md transition-all"
-                onClick={() => setEditAlumni(al)}
-              >
-                <div className="flex justify-center gap-1 items-center">
-                  <img src="/icons/edit.svg" alt="" className="h-6" />
-                  Edit Data Alumni
-                </div>
-              </button>
-              <button
-                className="bg-red-500 text-white px-4 py-2 rounded-md hover:-translate-y-1 hover:shadow-md transition-all"
-                onClick={() => handleDelete(al.id)}
-              >
-                <div className="flex justify-center gap-1 items-center">
-                  <img src="/icons/delete.svg" alt="" className="h-6" />
-                  Hapus Data Alumni
-                </div>
-              </button>
-            </div>
-          </div>
+          ))}
         </div>
-      ))}
+      ) : (
+        <div className="flex justify-center my-12">
+          <p className="text-gray-500 italic">Sedang Memuat Data...</p>
+        </div>
+      )}
 
       {editAlumni && (
         <div className="fixed top-8 left-0 w-full h-full  bg-opacity-50 flex justify-center items-center bg-white">
@@ -142,7 +150,10 @@ const GaleriAlumniIndex = () => {
                   <span className="mt-3 text-sm">
                     {fileName || "Tidak ada file yang dipilih"}
                   </span>
-                  <p className="text-sm italic mt-8">* Klik tombol jika ingin mengubah gambar, jangan klik tombol jika tidak ingin mengubah gambar</p>
+                  <p className="text-sm italic mt-8">
+                    * Klik tombol jika ingin mengubah gambar, jangan klik tombol
+                    jika tidak ingin mengubah gambar
+                  </p>
                   <input
                     id="file-upload"
                     type="file"

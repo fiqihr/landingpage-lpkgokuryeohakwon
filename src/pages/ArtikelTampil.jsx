@@ -41,20 +41,33 @@ const ArtikelTampil = () => {
               <img
                 src={article.mainImage}
                 alt={`Main image for ${article.title}`}
+                className="w-full h-full object-contain rounded-md"
               />
             </div>
           )}
-          <p className="mb-10">{article.content}</p>
+          <div
+            className="mt-4 text-sm mb-10"
+            dangerouslySetInnerHTML={{
+              __html: article.content
+                .replace(/<h1>/g, '<h1 class="text-4xl font-bold">')
+                .replace(/<h2>/g, '<h2 class="text-3xl font-semibold">')
+                .replace(/<h3>/g, '<h3 class="text-2xl font-medium">')
+                .replace(/<h4>/g, '<h4 class="text-xl font-medium">')
+                .replace(/<h5>/g, '<h5 class="text-lg font-medium">')
+                .replace(/<h6>/g, '<h6 class="text-base font-medium">'),
+            }}
+          ></div>
 
           {/* Display Other Images */}
           {article.images && article.images.length > 0 && (
-            <div>
+            <div className="flex h-52 gap-3">
               {article.images.map((image, index) => (
                 <img
                   key={index}
                   src={image}
                   alt={`Article ${article.title} image ${index + 1}`}
                   width="200"
+                  className="h-full object-contain rounded-md"
                   style={{ marginRight: "10px" }}
                 />
               ))}
