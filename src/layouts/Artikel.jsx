@@ -31,11 +31,13 @@ const Artikel = () => {
           <span className="border-b-4 border-gray-200">Berita Terbaru</span>
         </h1>
         {displayedArticles.length === 0 ? (
-          <p>Tidak ada artikel.</p>
+          <div className="flex justify-center">
+            <p className="italic text-sm">Loading...</p>
+          </div>
         ) : (
           <div className="flex flex-wrap gap-4 justify-center ">
             {displayedArticles.map((article) => (
-              <div key={article.id} className="w-2/5 flex-shrink-0 max-h-56">
+              <div key={article.id} className="w-full flex-shrink-0 max-h-56">
                 {/* Only show the title and main image */}
                 <Link to={`/artikelshow/${article.id}`}>
                   <div className="border flex justify-between px-12 py-8 items-center rounded-md hover:shadow-lg hover:-translate-y-1 transition-all ">
@@ -53,7 +55,7 @@ const Artikel = () => {
               </div>
             ))}
             <button
-              className="w-2/5 rounded-md flex justify-center items-center  max-h-56 "
+              className="w-2/5 rounded-md flex justify-center items-center  max-h-56 mt-5"
               onClick={handleNavigateToAllArticles}
             >
               <div className="text-primary flex justify-center items-center hover:opacity-75">

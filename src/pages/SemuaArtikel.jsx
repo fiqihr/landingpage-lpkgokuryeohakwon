@@ -24,19 +24,19 @@ const SemuaArtikel = () => {
       <NavbarSimple />
       <section id="semua-artikel" className="pt-10 pb-10">
         <div className="container mx-auto">
-          <h1 className="lg:text-5xl text-4xl font-bold text-center lg:mt-20 lg:mb-20 my-10 text-primary">
-            <span className="border-b-4 border-gray-200">Terbaru</span>
+          <h1 className="lg:text-4xl text-4xl font-bold text-center lg:mt-20 lg:mb-20 my-10 ">
+            <span className="">Berita terbaru LPK Gokuryeo</span>
           </h1>
           {articles.length === 0 ? (
-            <p>Tidak ada artikel.</p>
+            <div className="flex justify-center h-screen italic">Loading artikel...</div>
           ) : (
             <ul>
               {articles.map((article) => (
                 <li key={article.id} className="mb-8">
                   {/* Show the title and main image */}
                   <Link to={`/artikelshow/${article.id}`}>
-                    <div className="bg-gray-100 flex justify-between px-12 py-8 items-center rounded-md hover:shadow-lg hover:-translate-y-1 transition-all">
-                      <h3 className="text-3xl font-bold">{article.title}</h3>
+                    <div className="border flex justify-between px-12 py-8 items-center rounded-md hover:shadow-lg hover:-translate-y-1 transition-all">
+                      <h3 className="text-2xl font-bold">{article.title}</h3>
                       {article.mainImage && (
                         <img
                           className="rounded-md"

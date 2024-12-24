@@ -10,6 +10,10 @@ const ArtikelTampil = () => {
   const [article, setArticle] = useState(null);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
     const fetchArticle = async () => {
       const docRef = doc(db, "articles", id);
       const docSnap = await getDoc(docRef);
@@ -25,7 +29,16 @@ const ArtikelTampil = () => {
   }, [id]);
 
   if (!article) {
-    return <p>Loading article...</p>;
+    return (
+      <>
+        <NavbarSimple />
+        <div className="py-20 container mx-auto">
+          <div className="mx-auto px-4 w-full h-screen lg:w-2/3 flex justify-center items-center">
+            <p className="italic text-sm">Loading artikel...</p>
+          </div>
+        </div>
+      </>
+    );
   }
 
   return (
@@ -33,9 +46,10 @@ const ArtikelTampil = () => {
       <NavbarSimple />
       <div className="py-20 container mx-auto">
         <div className="mx-auto px-4 w-full lg:w-2/3">
-          <div className="mt-20 mb-10">
-            <h4 className="text-5xl font-bold text-center">{article.title}</h4>
+          <div className="mt-20 ">
+            <h4 className="text-4xl font-bold text-left">{article.title}</h4>
           </div>
+          <hr className="my-5 border-gray-200" />
           {article.mainImage && (
             <div className="w-full md:w-1/2 lg:w-2/3 mx-auto mb-10">
               <img

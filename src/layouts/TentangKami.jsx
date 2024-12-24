@@ -1,11 +1,11 @@
 const TentangKami = () => {
   return (
-    <section id="tentangkami" className="pt-10">
+    <section id="tentangkami" className="pt-10 bg-gradient-to-b from-gray-100 via-gray-50 to-white">
       <h1 className="text-4xl lg:text-5xl font-bold text-center mt-10 mb-5 lg:mt-20 lg:mb-20 text-primary">
         <span className="border-b-4 border-gray-200">Tentang Kami</span>
       </h1>
       <div className="container mx-auto px-4">
-        <div className="flex flex-col lg:flex-row items-center justify-between bg-gradient-to-tl from-white via-gray-50 to-gray-100 shadow-md rounded-lg">
+        <div className="flex flex-col lg:flex-row items-center justify-between bg-white shadow-md rounded-lg">
           <div className="w-full md:w-2/3 lg:w-1/3 flex justify-center p-8">
             <img
               src="/images/logo.png"
