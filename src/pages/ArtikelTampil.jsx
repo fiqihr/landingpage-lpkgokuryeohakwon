@@ -60,7 +60,7 @@ const ArtikelTampil = () => {
             </div>
           )}
           <div
-            className="mt-4 text-sm mb-10"
+            className="mt-4 mb-10"
             dangerouslySetInnerHTML={{
               __html: article.content
                 .replace(/<h1>/g, '<h1 class="text-4xl font-bold">')

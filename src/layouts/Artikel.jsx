@@ -38,13 +38,14 @@ const Artikel = () => {
           <div className="flex flex-wrap gap-4 justify-center ">
             {displayedArticles.map((article) => (
               <div key={article.id} className="w-full flex-shrink-0 max-h-56">
-                {/* Only show the title and main image */}
                 <Link to={`/artikelshow/${article.id}`}>
                   <div className="border flex justify-between px-12 py-8 items-center rounded-md hover:shadow-lg hover:-translate-y-1 transition-all ">
-                    <h3 className="text-lg font-bold">{article.title}</h3>
+                    <h3 className="text-lg lg:text-xl font-bold">
+                      {article.title}
+                    </h3>
                     {article.mainImage && (
                       <img
-                        className="rounded-md h-32"
+                        className="rounded-md h-32 hidden md:block lg:block"
                         src={article.mainImage}
                         alt={`Main image for ${article.title}`}
                         style={{ marginBottom: "10px" }}
@@ -55,7 +56,7 @@ const Artikel = () => {
               </div>
             ))}
             <button
-              className="w-2/5 rounded-md flex justify-center items-center  max-h-56 mt-5"
+              className="w-full rounded-md flex justify-center items-center max-h-56 mt-5 "
               onClick={handleNavigateToAllArticles}
             >
               <div className="text-primary flex justify-center items-center hover:opacity-75">

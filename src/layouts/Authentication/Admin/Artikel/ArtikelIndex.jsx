@@ -60,7 +60,7 @@ const ArtikelIndex = () => {
               {/* Only show the title and main image */}
               <Link to={`/dashboardadmin/artikelshow/${article.id}`}>
                 <div className="bg-gray-100 flex justify-between px-12 py-8 items-center rounded-md hover:shadow-lg hover:-translate-y-1 transition-all">
-                  <h3 className="text-3xl font-bold">{article.title}</h3>
+                  <h3 className="text-2xl font-bold">{article.title}</h3>
                   {article.mainImage && (
                     <img
                       className="rounded-md"

@@ -10,7 +10,9 @@ module.exports = withMT({
   theme: {
     extend: {
       fontFamily: {
-        inter: ['Inter', 'sans-serif'],
+        inter: ["Inter", "sans-serif"],
+        jost: ["Jost", "sans-serif"],
+        opensans: ["Open Sans", "sans-serif"],
         // sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },
       colors: {
