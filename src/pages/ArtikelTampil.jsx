@@ -3,10 +3,12 @@ import { useParams } from "react-router-dom";
 import { db } from "../firebase/firebase"; // Sesuaikan path dengan konfigurasi firebase Anda
 import { doc, getDoc } from "firebase/firestore";
 import { NavbarSimple } from "../layouts/Navbar";
+import { formatDistanceToNow, differenceInDays, format } from "date-fns";
+import { id } from "date-fns/locale";
 import Footer from "../layouts/Footer";
 
 const ArtikelTampil = () => {
-  const { id } = useParams(); // Mengambil ID dari URL
+  const { id: articleId } = useParams(); // Mengambil ID dari URL
   const [article, setArticle] = useState(null);
 
   useEffect(() => {
@@ -15,18 +17,22 @@ const ArtikelTampil = () => {
 
   useEffect(() => {
     const fetchArticle = async () => {
-      const docRef = doc(db, "articles", id);
+      const docRef = doc(db, "articles", articleId);
       const docSnap = await getDoc(docRef);
 
       if (docSnap.exists()) {
-        setArticle(docSnap.data());
+        const data = docSnap.data();
+        setArticle({
+          ...data,
+          createdAt: data.createdAt?.toDate() || null,
+        });
       } else {
-        console.log("No such document!");
+        console.log("Tidak ada artikel...");
       }
     };
 
     fetchArticle();
-  }, [id]);
+  }, [articleId]);
 
   if (!article) {
     return (
@@ -41,6 +47,12 @@ const ArtikelTampil = () => {
     );
   }
 
+  const formattedDate = article.createdAt
+    ? differenceInDays(new Date(), article.createdAt) < 30
+      ? formatDistanceToNow(article.createdAt, { addSuffix: true, locale: id })
+      : format(article.createdAt, "EEEE, dd MMMM yyyy", { locale: id })
+    : "-";
+
   return (
     <>
       <NavbarSimple />
@@ -49,6 +61,7 @@ const ArtikelTampil = () => {
           <div className="mt-20 ">
             <h4 className="text-4xl font-bold text-left">{article.title}</h4>
           </div>
+          <p className="mt-4 text-sm italic text-gray-500">{formattedDate}</p>
           <hr className="my-5 border-gray-200" />
           {article.mainImage && (
             <div className="w-full md:w-1/2 lg:w-2/3 mx-auto mb-10">

@@ -150,8 +150,8 @@ const GaleriAlumniIndex = () => {
                   <span className="mt-3 text-sm">
                     {fileName || "Tidak ada file yang dipilih"}
                   </span>
-                  <p className="text-sm italic mt-8">
-                    * Klik tombol jika ingin mengubah gambar, jangan klik tombol
+                  <p className="text-sm italic mt-8 text-gray-600">
+                    * Klik tombol <strong>'Ganti Gambar'</strong> jika ingin mengubah gambar, jangan klik 
                     jika tidak ingin mengubah gambar
                   </p>
                   <input

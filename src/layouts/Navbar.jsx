@@ -15,7 +15,7 @@ function NavList() {
       >
         <Link
           to="/#tentangkami"
-          className="flex items-center text-gray-700 hover:border-b-2 hover:border-primary transition-all "
+          className="flex items-center text-gray-700 hover:text-primary hover:underline transition-all "
         >
           Tentang Kami
         </Link>
@@ -28,7 +28,7 @@ function NavList() {
       >
         <Link
           to="/#program"
-          className="flex items-center text-gray-700 hover:border-b-2 hover:border-primary transition-all "
+          className="flex items-center text-gray-700 hover:text-primary hover:underline transition-all "
         >
           Sektor Pekerjaan
         </Link>
@@ -41,7 +41,7 @@ function NavList() {
       >
         <Link
           to="/#infomasuk"
-          className="flex items-center text-gray-700 hover:border-b-2 hover:border-primary transition-all "
+          className="flex items-center text-gray-700 hover:text-primary hover:underline transition-all "
         >
           Info Masuk
         </Link>
@@ -55,7 +55,7 @@ function NavList() {
       >
         <Link
           to="/#infokelas"
-          className="flex items-center text-gray-700 hover:border-b-2 hover:border-primary transition-all "
+          className="flex items-center text-gray-700  hover:text-primary hover:underline  transition-all "
         >
           Info Kelas
         </Link>
@@ -68,7 +68,7 @@ function NavList() {
       >
         <Link
           to="/#galerialumni"
-          className="flex items-center text-gray-700 hover:border-b-2 hover:border-primary transition-all "
+          className="flex items-center text-gray-700 hover:text-primary hover:underline transition-all "
         >
           Galeri Alumni
         </Link>

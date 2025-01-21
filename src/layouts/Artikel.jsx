@@ -39,7 +39,7 @@ const Artikel = () => {
             {displayedArticles.map((article) => (
               <div key={article.id} className="w-full flex-shrink-0 max-h-56">
                 <Link to={`/artikelshow/${article.id}`}>
-                  <div className="border flex justify-between px-12 py-8 items-center rounded-md hover:shadow-lg hover:-translate-y-1 transition-all ">
+                  <div className="border flex justify-between px-12 py-8 items-center rounded-md hover:shadow-md hover:-translate-y-1 transition-all ">
                     <h3 className="text-lg lg:text-xl font-bold">
                       {article.title}
                     </h3>
@@ -56,10 +56,10 @@ const Artikel = () => {
               </div>
             ))}
             <button
-              className="w-full rounded-md flex justify-center items-center max-h-56 mt-5 "
+              className="w-full md:w-1/3 lg:w-1/4 flex justify-center items-center max-h-56 mt-5 "
               onClick={handleNavigateToAllArticles}
             >
-              <div className="text-primary flex justify-center items-center hover:opacity-75">
+              <div className=" text-primary flex justify-center items-center hover:opacity-75">
                 Lihat selengkapnya
                 <img src="/icons/right.svg" className="h-7" alt="" />
               </div>

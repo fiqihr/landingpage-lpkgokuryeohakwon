@@ -21,7 +21,9 @@ const NavbarAdmin = () => {
       <div className="container mx-auto flex justify-between items-center">
         {/* Email Display */}
         <div>
-          <p className="text-lg font-bold text-primary">Welcome, {currentUser?.email}</p>
+          <p className="text-lg font-bold text-primary">
+            Welcome, {currentUser?.email}
+          </p>
         </div>
 
         {/* Logout Button */}

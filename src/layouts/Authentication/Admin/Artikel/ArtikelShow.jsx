@@ -136,7 +136,11 @@ const ArtikelShow = () => {
   };
 
   if (!article) {
-    return <p>Loading article...</p>;
+    return (
+      <div className="h-screen flex justify-center items-center">
+        <p className="italic text-sm">Loading...</p>
+      </div>
+    );
   }
 
   return (
@@ -300,7 +304,8 @@ const ArtikelShow = () => {
               </p>
               <input type="file" multiple onChange={handleOtherImagesChange} />
               <p className="mt-4 italic text-sm text-gray-500">
-                Klik tombol <strong>Ctrl</strong> dan pilih gambar yang diinginkan, saat ingin memilih banyak gambar.
+                Klik tombol <strong>Ctrl</strong> dan pilih gambar yang
+                diinginkan, saat ingin memilih banyak gambar.
               </p>
             </div>
             {uploadProgress > 0 && <p>Upload Progress: {uploadProgress}%</p>}

@@ -5,7 +5,7 @@ const TentangKami = () => {
         <span className="border-b-4 border-gray-200">Tentang Kami</span>
       </h1>
       <div className="container mx-auto px-4">
-        <div className="flex flex-col lg:flex-row items-center justify-between bg-white shadow-md rounded-lg">
+        <div className="flex flex-col lg:flex-row items-center justify-between bg-white shadow-md rounded-md">
           <div className="w-full md:w-2/3 lg:w-1/3 flex justify-center p-8">
             <img
               src="/images/logo.png"

@@ -10,6 +10,7 @@ import {
   updateDoc,
 } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 
 const InfoKelasIndex = () => {
   const [infoKelas, setInfoKelas] = useState([]);
@@ -44,15 +45,50 @@ const InfoKelasIndex = () => {
     return () => unsubscribe();
   }, []);
 
+  // const handleDelete = async (id) => {
+  //   if (window.confirm("Apakah Anda yakin ingin menghapus data ini?")) {
+  //     try {
+  //       await deleteDoc(doc(getFirestore(app), "infoKelas", id));
+  //       console.log("Data berhasil dihapus!");
+  //     } catch (error) {
+  //       alert("Error: " + error.message);
+  //     }
+  //   }
+  // };
+
   const handleDelete = async (id) => {
-    if (window.confirm("Apakah Anda yakin ingin menghapus data ini?")) {
-      try {
-        await deleteDoc(doc(getFirestore(app), "infoKelas", id));
-        console.log("Data berhasil dihapus!");
-      } catch (error) {
-        alert("Error: " + error.message);
-      }
-    }
+    const buttonConfirm = Swal.mixin({
+      customClass: {
+        confirmButton:
+          "bg-red-500 text-white px-4 py-2 rounded-md hover:-translate-y-1 hover:shadow-md transition-all",
+        cancelButton:
+          "mr-2 bg-gray-500 text-white px-4 py-2 rounded-md hover:-translate-y-1 hover:shadow-md transition-all",
+      },
+      buttonsStyling: false,
+    });
+    buttonConfirm
+      .fire({
+        text: "Yakin ingin menghapus data ini?",
+        icon: "question",
+        showCancelButton: true,
+        confirmButtonText: "Ya",
+        cancelButtonText: "Batal",
+        reverseButtons: true,
+      })
+      .then(async (result) => {
+        if (result.isConfirmed) {
+          try {
+            await deleteDoc(doc(getFirestore(app), "infoKelas", id));
+            buttonConfirm.fire({ text: "Data telah dihapus", icon: "success" });
+          } catch (error) {
+            buttonConfirm.fire(
+              "Gagal!",
+              `Terjadi kesalahan: ${error.message}`,
+              "error"
+            );
+          }
+        }
+      });
   };
 
   const handleEdit = (kelas) => {
@@ -75,8 +111,14 @@ const InfoKelasIndex = () => {
         schedule: editSchedule,
         linkPendaftaran: editLinkPendaftaran,
       });
-      alert("Data berhasil diupdate");
-      setShowModal(false); // Sembunyikan modal setelah update
+      // alert("Data berhasil diupdate");
+      Swal.fire({
+        icon: "success",
+        title: "Data berhasil diupate",
+        showConfirmButton: false,
+        timer: 1500,
+      });
+      setShowModal(false);
     } catch (error) {
       alert("Error: " + error.message);
     }
@@ -158,51 +200,6 @@ const InfoKelasIndex = () => {
       {/* Modal Form Edit */}
       {showModal && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-          {/* <div className="bg-gray-100 p-6 rounded-lg shadow-lg w-full max-w-lg">
-            <h2 className="text-2xl font-bold mb-4">Edit Info Kelas</h2>
-            <input
-              type="text"
-              value={editTitle}
-              onChange={(e) => setEditTitle(e.target.value)}
-              className="mb-2 p-2 border border-gray-300 rounded-md w-full"
-              placeholder="Edit Title"
-            />
-            <input
-              type="text"
-              value={editDescription}
-              onChange={(e) => setEditDescription(e.target.value)}
-              className="mb-2 p-2 border border-gray-300 rounded-md w-full"
-              placeholder="Edit Description"
-            />
-            <input
-              type="text"
-              value={editSchedule}
-              onChange={(e) => setEditSchedule(e.target.value)}
-              className="mb-2 p-2 border border-gray-300 rounded-md w-full"
-              placeholder="Edit Schedule"
-            />
-            <input
-              type="text"
-              value={editLinkPendaftaran}
-              onChange={(e) => setEditLinkPendaftaran(e.target.value)}
-              className="mb-2 p-2 border border-gray-300 rounded-md w-full"
-              placeholder="Edit Link Pendaftaran"
-            />
-            <div className="flex justify-end gap-2 mt-4">
-              <button
-                className="bg-green-500 text-white px-4 py-2 rounded-md"
-                onClick={handleUpdate}
-              >
-                Update
-              </button>
-              <button
-                className="bg-gray-500 text-white px-4 py-2 rounded-md"
-                onClick={closeModal}
-              >
-                Cancel
-              </button>
-            </div>
-          </div> */}
           <div className="bg-gray-100 rounded-lg shadow-lg">
             <div className="flex flex-wrap justify-between mx-8">
               <div className="py-4 w-2/3">

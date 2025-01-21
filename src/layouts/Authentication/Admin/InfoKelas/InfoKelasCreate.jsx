@@ -3,6 +3,7 @@ import { app } from "../../../../firebase/firebase";
 import { getFirestore, collection, addDoc } from "firebase/firestore";
 import { Link, Navigate, useNavigate } from "react-router-dom";
 import { useAuth } from "../../../../contexts/authContext";
+import Swal from "sweetalert2";
 
 const InfoKelasCreate = () => {
   const { userLoggedIn } = useAuth();
@@ -19,7 +20,7 @@ const InfoKelasCreate = () => {
   const saveData = async () => {
     const db = getFirestore(app);
     const infoKelasRef = collection(db, "infoKelas");
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
     try {
       await addDoc(infoKelasRef, {
@@ -29,7 +30,15 @@ const InfoKelasCreate = () => {
         linkPendaftaran,
         createdAt: Date.now(),
       });
-      alert("Data disimpan!");
+      Swal.fire({
+        icon: "success",
+        text: "Kelas baru berhasil ditambahkan!",
+        showConfirmButton: true,
+        customClass: {
+          confirmButton:
+            "bg-primary text-white px-4 py-2 rounded-md hover:-translate-y-1 hover:shadow-md transition-all",
+        },
+      });
       navigate("/dashboardadmin");
     } catch (error) {
       alert("Error: " + error.message);

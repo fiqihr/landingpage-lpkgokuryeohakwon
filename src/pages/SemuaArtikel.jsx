@@ -28,7 +28,9 @@ const SemuaArtikel = () => {
             <span className="">Berita terbaru LPK Gokuryeo</span>
           </h1>
           {articles.length === 0 ? (
-            <div className="flex justify-center h-screen italic">Loading artikel...</div>
+            <div className="flex justify-center h-screen italic">
+              Loading artikel...
+            </div>
           ) : (
             <ul>
               {articles.map((article) => (
